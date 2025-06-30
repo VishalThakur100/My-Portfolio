@@ -85,11 +85,11 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <span className="font-semibold text-primary">Location:</span>
-                  <p className="text-muted-foreground">Noida, Uttar Pradesh</p>
+                  <p className="text-muted-foreground">Meerut, Uttar Pradesh</p>
                 </div>
                 <div>
                   <span className="font-semibold text-primary">Education:</span>
-                  <p className="text-muted-foreground">B.Tech Computer Science</p>
+                  <p className="text-muted-foreground">B.Tech Computer Science and Engineering</p>
                 </div>
                 <div>
                   <span className="font-semibold text-primary">University:</span>

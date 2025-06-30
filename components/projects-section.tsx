@@ -5,40 +5,41 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const ProjectsSection = () => {
   const projects = [
     {
       title: 'LeaseLounge',
       description: 'A comprehensive rental platform connecting property owners with tenants. Features advanced search, real-time chat, and secure payment processing.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Stripe'],
+      technologies: ['Nextjs', 'Node.js', 'MongoDB', 'TailwindCSS', 'Javascript'],
       image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg',
       github: '#',
-      demo: '#',
+      demo: 'https://lease-lounge.vercel.app/',
       featured: true
     },
     {
       title: 'Diary Doodle',
       description: 'A modern digital diary application with rich text editing, mood tracking, and cloud synchronization for personal journaling.',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind'],
+      technologies: ['Java', 'Spring Boot', 'MongoDB', 'Postman'],
       image: 'https://images.pexels.com/photos/1587014/pexels-photo-1587014.jpeg',
       github: '#',
-      demo: '#',
+      demo: 'https://github.com/VishalThakur100/Diary-Doodle',
       featured: true
     },
     {
       title: 'Movie Matrix',
       description: 'A movie discovery platform with personalized recommendations, reviews, and watchlist management using modern web technologies.',
-      technologies: ['React', 'Redux', 'Firebase', 'TMDB API', 'Material-UI'],
+      technologies: ['React', 'Redux', 'Firebase', 'TMDB API', 'Javascript', 'CSS','Tailwind'],
       image: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg',
       github: '#',
-      demo: '#',
+      demo: 'https://movie-matrix-80eda.web.app/',
       featured: false
     },
     {
       title: 'Urban Havens',
       description: 'Real estate platform showcasing properties with virtual tours, interactive maps, and advanced filtering capabilities.',
-      technologies: ['Vue.js', 'Express.js', 'MySQL', 'Mapbox', 'AWS S3'],
+      technologies: ['Reactjs','Nodejs','MongoDB', 'Express.js', 'MySQL', 'Mapbox'],
       image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg',
       github: '#',
       demo: '#',
@@ -47,19 +48,19 @@ const ProjectsSection = () => {
     {
       title: 'Beezy Bee',
       description: 'Task management and productivity app with team collaboration features, time tracking, and project analytics.',
-      technologies: ['React Native', 'Node.js', 'GraphQL', 'MongoDB', 'Apollo'],
+      technologies: ['Javascript','React', 'HTML', 'CSS','Tailwind'],
       image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
       github: '#',
-      demo: '#',
+      demo: 'https://beezy-bee.vercel.app/',
       featured: false
     },
     {
       title: 'Startup Pitch Platform',
       description: 'Platform for entrepreneurs to pitch ideas, connect with investors, and track funding progress with interactive dashboards.',
-      technologies: ['Next.js', 'TypeScript', 'Supabase', 'Stripe', 'Chart.js'],
+      technologies: ['Next.js', 'TypeScript', 'Sanity', 'Javascript', 'CSS'],
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
       github: '#',
-      demo: '#',
+      demo: 'https://pitch-hub-lime.vercel.app/',
       featured: false
     }
   ];
@@ -121,19 +122,20 @@ const ProjectsSection = () => {
               >
                 <Card className="overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 h-full">
                   <div className="relative overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={500}
+                      height={300}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Button size="icon" variant="secondary" className="h-8 w-8">
-                        <Github className="h-4 w-4" />
-                      </Button>
-                      <Button size="icon" variant="secondary" className="h-8 w-8">
-                        <ExternalLink className="h-4 w-4" />
-                      </Button>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <Button size="icon" variant="secondary" className="h-8 w-8">
+                          <ExternalLink className="h-4 w-4" />
+                        </Button>
+                      </a>
                     </div>
                   </div>
                   <CardHeader>
@@ -172,19 +174,20 @@ const ProjectsSection = () => {
               >
                 <Card className="overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 h-full">
                   <div className="relative overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={500}
+                      height={300}
                       className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Button size="icon" variant="secondary" className="h-8 w-8">
-                        <Github className="h-4 w-4" />
-                      </Button>
-                      <Button size="icon" variant="secondary" className="h-8 w-8">
-                        <ExternalLink className="h-4 w-4" />
-                      </Button>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <Button size="icon" variant="secondary" className="h-8 w-8">
+                          <ExternalLink className="h-4 w-4" />
+                        </Button>
+                      </a>
                     </div>
                   </div>
                   <CardHeader>

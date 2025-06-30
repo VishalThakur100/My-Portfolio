@@ -78,10 +78,21 @@ const config: Config = {
             height: '0',
           },
         },
+        spin: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        glow: {
+          "0%, 100%": { opacity: 0.7, boxShadow: '0 0 10px #667eea' },
+          "50%": { opacity: 1, boxShadow: '0 0 20px #764ba2' }
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        "spin-slow": "spin 8s linear infinite",
+        "glow": "glow 4s ease-in-out infinite",
       },
     },
   },

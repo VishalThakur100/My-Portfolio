@@ -65,9 +65,9 @@ const SkillsSection = () => {
     { name: 'Node.js', angle: 144, radius: 130, speed: 1.2 },
     { name: 'MongoDB', angle: 216, radius: 135, speed: -1.1 },
     { name: 'Python', angle: 288, radius: 125, speed: 0.9 },
-    { name: 'AWS', angle: 36, radius: 110, speed: -1.3 },
-    { name: 'Docker', angle: 108, radius: 145, speed: 1.1 },
-    { name: 'GraphQL', angle: 180, radius: 115, speed: -0.9 }
+    { name: 'Javascript', angle: 36, radius: 110, speed: -1.3 },
+    { name: 'Java', angle: 108, radius: 145, speed: 1.1 },
+    { name: 'Springboot', angle: 180, radius: 115, speed: -0.9 }
   ];
 
   return (
@@ -129,7 +129,7 @@ const SkillsSection = () => {
               }}
             >
               <motion.div
-                className="absolute w-12 h-12 bg-background border-2 border-primary/20 rounded-lg flex items-center justify-center text-xs font-semibold shadow-md hover:border-primary/50 transition-colors"
+                className="absolute bg-background border-2 border-primary/20 rounded-lg flex items-center justify-center text-xs font-semibold shadow-md hover:border-primary/50 transition-colors px-3 py-2"
                 style={{
                   left: `${50 + 50 * Math.cos((skill.angle * Math.PI) / 180)}%`,
                   top: `${50 + 50 * Math.sin((skill.angle * Math.PI) / 180)}%`,
@@ -146,7 +146,7 @@ const SkillsSection = () => {
                   }
                 }}
               >
-                {skill.name}
+                <span style={{ whiteSpace: 'nowrap' }}>{skill.name}</span>
               </motion.div>
             </motion.div>
           ))}

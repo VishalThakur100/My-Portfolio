@@ -87,13 +87,13 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 XXXXXXXXXX',
-      href: 'tel:+91XXXXXXXXXX'
+      value: '+91 8534894626',
+      href: 'tel:+918534894626'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Noida, Uttar Pradesh',
+      value: 'Meerut, Uttar Pradesh, India',
       href: null
     }
   ];

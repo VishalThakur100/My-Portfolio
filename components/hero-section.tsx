@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import img from '../app/DSC_1417.png'
+
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -36,21 +38,24 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex justify-center"
           >
-            <div className="relative">
+            <div className="relative"> 
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl"
+                className="relative w-32 h-32 md:w-40 md:h-40"
               >
-                <Image
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-                  alt="Vishal Singh - Software Developer"
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 768px) 128px, 160px"
-                />
-                {/* Overlay gradient for better contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-blue-600 animate-glow"></div>
+                <div className="absolute inset-1.5 bg-background rounded-full"></div>
+                <div className="absolute inset-1.5 rounded-full overflow-hidden">
+                  <Image
+                    src={img}
+                    alt="Vishal Singh - Software Developer"
+                    fill
+                    className="object-cover"
+                    style={{ objectPosition: 'top' }}
+                    priority
+                    sizes="(max-width: 768px) 128px, 160px"
+                  />
+                </div>
               </motion.div>
               
               {/* Animated border ring */}
