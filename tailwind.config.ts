@@ -84,8 +84,8 @@ const config: Config = {
           },
         },
         glow: {
-          "0%, 100%": { opacity: 0.7, boxShadow: '0 0 10px #667eea' },
-          "50%": { opacity: 1, boxShadow: '0 0 20px #764ba2' }
+          "0%, 100%": { opacity: "0.7", boxShadow: '0 0 10px #667eea' },
+          "50%": { opacity: "1", boxShadow: '0 0 20px #764ba2' }
         }
       },
       animation: {
