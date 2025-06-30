@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://vishalsingh.dev
+
+# Sitemaps
+Sitemap: https://vishalsingh.dev/sitemap.xml
