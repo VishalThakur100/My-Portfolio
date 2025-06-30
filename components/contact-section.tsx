@@ -81,15 +81,15 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'vthakur2290@gmail.com',
+      value: 'vishalthakur.dev430@gmail.com',
       href: 'mailto:vthakur2290@gmail.com'
     },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+91 8534894626',
-      href: 'tel:+918534894626'
-    },
+    // {
+    //   icon: Phone,
+    //   label: 'Phone',
+    //   value: '+91 xxxxxxxx',
+    //   href: 'tel:+91xxxxxxxx'
+    // },
     {
       icon: MapPin,
       label: 'Location',

@@ -93,7 +93,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto"
             >
-              Software Developer & Problem Solver
+              Full-Stack Developer | Problem Solver | Tech Enthusiast
             </motion.p>
           </motion.div>
 

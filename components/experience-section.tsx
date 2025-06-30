@@ -8,11 +8,26 @@ import { Badge } from '@/components/ui/badge';
 const ExperienceSection = () => {
   const experiences = [
     {
+      type: 'program',
+      title: 'Software Developer',
+      company: 'Jiffy Software Solutions',
+      location: 'Onsite',
+      duration: 'Dec 2024 - Present',
+      description: 'Contributed to the development of scalable, full-stack enterprise applications at Jiffy Software Solutions. Collaborated with backend, frontend, and QA teams to deliver robust features and enhancements for critical business modules.',
+achievements: [
+  'Implemented IVR and ACD modules for the Jiffy Edge Contact Center platform using Spring Boot and React',
+  'Built dynamic, role-based menu systems and user management flows using React, Redux, and REST APIs',
+  'Optimized backend performance by refactoring JPA queries, resulting in a 40% improvement in response time'
+],
+technologies: ['React', 'Redux', 'Spring Boot', 'Java', 'MySQL', 'JWT', 'REST API']
+
+    },
+    {
       type: 'internship',
-      title: 'Software Development Intern',
-      company: 'Stanbriss Infotech',
+      title: 'Full Stack Development Intern',
+      company: 'Cognifyz Technologies',
       location: 'Remote',
-      duration: 'Jun 2024 - Aug 2024',
+      duration: 'Nov 2024 - Jan 2025',
       description: 'Developed full-stack web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.',
       achievements: [
         'Built responsive web applications using React and Node.js',
@@ -27,39 +42,39 @@ const ExperienceSection = () => {
       company: 'AICTE',
       location: 'New Delhi',
       duration: 'Mar 2024 - May 2024',
-      description: 'Participated in research and development projects focused on emerging technologies and their applications in education sector.',
+      description: `Selected for the AICTE-Internship on "AI: Transformative Learning with TechSaksham," a joint CSR initiative by Microsoft & SAP. This 4-week program focuses on developing foundational IT skills through a project-based internship, personalized mentorship, and knowledge-sharing sessions with industry experts. Key activities include project work, preparing project documentation, and a final report, with the opportunity to present project prototypes to an expert panel.`,
       achievements: [
         'Contributed to AI-driven educational platform development',
         'Conducted technical research on machine learning applications',
         'Presented findings to senior technical team'
       ],
-      technologies: ['Python', 'Machine Learning', 'Django', 'PostgreSQL']
+      technologies: ['Python', 'Machine Learning', 'Django']
     },
-    {
-      type: 'program',
-      title: 'CSR Initiative Participant',
-      company: 'SAP & Microsoft',
-      location: 'Online',
-      duration: 'Jan 2024 - Mar 2024',
-      description: 'Participated in corporate social responsibility program focusing on technology education and community impact.',
-      achievements: [
-        'Completed advanced technology training modules',
-        'Contributed to community tech education initiatives',
-        'Developed solutions for social impact projects'
-      ],
-      technologies: ['Cloud Computing', 'Azure', 'SAP', 'Community Outreach']
-    }
+    // {
+    //   type: 'program',
+    //   title: 'CSR Initiative Participant',
+    //   company: 'SAP & Microsoft',
+    //   location: 'Online',
+    //   duration: 'Jan 2024 - Mar 2024',
+    //   description: 'Participated in corporate social responsibility program focusing on technology education and community impact.',
+    //   achievements: [
+    //     'Completed advanced technology training modules',
+    //     'Contributed to community tech education initiatives',
+    //     'Developed solutions for social impact projects'
+    //   ],
+    //   technologies: ['Cloud Computing', 'Azure', 'SAP', 'Community Outreach']
+    // }
   ];
 
   const leadership = [
     {
       title: 'TechWiz Event Leader',
-      organization: 'University Tech Club',
-      duration: '2023 - Present',
+      organization: 'College Tech Club',
+      duration: '2023',
       description: 'Led and mentored 150+ students in technical competitions and organized large-scale tech events.',
       achievements: [
         'Mentored 150+ students in various technical domains',
-        'Organized tech competition with 500+ participants',
+        'Organized tech competition with 200+ participants',
         'Previously won the same competition as a participant'
       ]
     }
@@ -278,7 +293,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Workshops & Training */}
-          <div>
+          {/* <div>
             <motion.h3
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -307,7 +322,7 @@ const ExperienceSection = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
