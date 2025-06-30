@@ -5,12 +5,24 @@ import { motion } from 'framer-motion';
 import { Moon, Sun, Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
+import { useActiveSection } from '@/hooks/use-active-section';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+  const navItems = [
+    { label: 'Home', id: 'home' },
+    { label: 'About', id: 'about' },
+    { label: 'Skills', id: 'skills' },
+    { label: 'Projects', id: 'projects' },
+    { label: 'Experience', id: 'experience' },
+    { label: 'Contact', id: 'contact' },
+  ];
+
+  const activeSection = useActiveSection(navItems.map(item => item.id));
 
   useEffect(() => {
     setMounted(true);
@@ -29,15 +41,6 @@ const Navigation = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
-  const navItems = [
-    { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Projects', id: 'projects' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Contact', id: 'contact' },
-  ];
 
   if (!mounted) return null;
 
@@ -71,7 +74,11 @@ const Navigation = () => {
                 onClick={() => scrollToSection(item.id)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  activeSection === item.id
+                    ? 'text-primary'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
               >
                 {item.label}
               </motion.button>
@@ -156,7 +163,11 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md w-full text-left transition-colors"
+                  className={`block px-3 py-2 text-base font-medium rounded-md w-full text-left transition-colors ${
+                    activeSection === item.id
+                      ? 'text-primary bg-accent'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-accent'
+                  }`}
                 >
                   {item.label}
                 </button>

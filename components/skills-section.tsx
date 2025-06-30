@@ -11,7 +11,10 @@ import {
   Cpu,
   FileCode,
   GitBranch,
-  Layers
+  Layers,
+  TerminalSquare,
+  Flame,
+  Leaf
 } from 'lucide-react';
 
 const SkillsSection = () => {
@@ -23,7 +26,7 @@ const SkillsSection = () => {
         { name: 'TypeScript', icon: Code2, level: 85 },
         { name: 'Python', icon: Brain, level: 80 },
         { name: 'Java', icon: Cpu, level: 75 },
-        { name: 'C++', icon: FileCode, level: 70 }
+        { name: 'C', icon: FileCode, level: 70 }
       ]
     },
     {
@@ -42,8 +45,8 @@ const SkillsSection = () => {
         { name: 'Node.js', icon: Server, level: 85 },
         { name: 'Express.js', icon: Server, level: 80 },
         { name: 'MongoDB', icon: Database, level: 85 },
-        { name: 'PostgreSQL', icon: Database, level: 75 },
-        { name: 'Firebase', icon: Database, level: 80 }
+        { name: 'Spring Boot', icon: Leaf, level: 75 },
+        { name: 'Mysql', icon: Database, level: 80 }
       ]
     },
     {
@@ -51,9 +54,9 @@ const SkillsSection = () => {
       skills: [
         { name: 'Git/GitHub', icon: GitBranch, level: 90 },
         { name: 'Docker', icon: Layers, level: 70 },
-        { name: 'AWS', icon: Globe, level: 65 },
+        { name: 'Visual Studio Code', icon: TerminalSquare, level: 65 },
         { name: 'REST APIs', icon: Server, level: 85 },
-        { name: 'GraphQL', icon: Database, level: 70 }
+        { name: 'Firebase Hosting', icon: Flame, level: 70 }
       ]
     }
   ];

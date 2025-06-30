@@ -11,7 +11,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-      <HeroSection />
+      <div id="home">
+        <HeroSection />
+      </div>
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />

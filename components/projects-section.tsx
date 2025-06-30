@@ -11,7 +11,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: 'LeaseLounge',
-      description: 'A comprehensive rental platform connecting property owners with tenants. Features advanced search, real-time chat, and secure payment processing.',
+      description: ' Scalable rental platform connecting tenants with property owners. Features Google OAuth authentication, interactive Mapbox maps, responsive design with Tailwind CSS, and seamless media uploads via Cloudinary.',
       technologies: ['Nextjs', 'Node.js', 'MongoDB', 'TailwindCSS', 'Javascript'],
       image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg',
       github: '#',
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
     },
     {
       title: 'Diary Doodle',
-      description: 'A modern digital diary application with rich text editing, mood tracking, and cloud synchronization for personal journaling.',
+      description: 'Personal journaling platform with JWT-based authentication, role-based access control, and CRUD entry management. Built using Spring Boot, Hibernate, and Spring Security for a secure and scalable backend.',
       technologies: ['Java', 'Spring Boot', 'MongoDB', 'Postman'],
       image: 'https://images.pexels.com/photos/1587014/pexels-photo-1587014.jpeg',
       github: '#',
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     },
     {
       title: 'Movie Matrix',
-      description: 'A movie discovery platform with personalized recommendations, reviews, and watchlist management using modern web technologies.',
+      description: 'Movie discovery platform featuring real-time search, genre filtering, trending content, and detailed insights powered by the TMDB API.',
       technologies: ['React', 'Redux', 'Firebase', 'TMDB API', 'Javascript', 'CSS','Tailwind'],
       image: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg',
       github: '#',
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
     },
     {
       title: 'Urban Havens',
-      description: 'Real estate platform showcasing properties with virtual tours, interactive maps, and advanced filtering capabilities.',
+      description: ' Real estate platform to browse, list, and filter urban properties with image galleries and a responsive, Tailwind-powered UI.',
       technologies: ['Reactjs','Nodejs','MongoDB', 'Express.js', 'MySQL', 'Mapbox'],
       image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg',
       github: '#',
@@ -47,16 +47,16 @@ const ProjectsSection = () => {
     },
     {
       title: 'Beezy Bee',
-      description: 'Task management and productivity app with team collaboration features, time tracking, and project analytics.',
+      description: 'Responsive weather app with real-time updates, 5-day forecasts, and dynamic visuals powered by the OpenWeather API.',
       technologies: ['Javascript','React', 'HTML', 'CSS','Tailwind'],
-      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+      image: 'https://cdn.dribbble.com/userupload/9745588/file/original-75ee0ad604cd78d220b32090ce8499e4.png?resize=752x&vertical=center',
       github: '#',
       demo: 'https://beezy-bee.vercel.app/',
       featured: false
     },
     {
       title: 'Startup Pitch Platform',
-      description: 'Platform for entrepreneurs to pitch ideas, connect with investors, and track funding progress with interactive dashboards.',
+      description: 'Startup showcase platform for pitching ideas, browsing innovations, and community interaction with authentication and responsive UI.',
       technologies: ['Next.js', 'TypeScript', 'Sanity', 'Javascript', 'CSS'],
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
       github: '#',
