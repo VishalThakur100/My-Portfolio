@@ -15,6 +15,21 @@ const HeroSection = () => {
     }
   };
 
+  const downloadResume = () => {
+    
+    const resumeUrl = 'https://drive.google.com/file/d/1E7Jboevj5u2p_6CUCENgTLg8fFK7MTAw/view?usp=drive_link';
+    
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Vishal_Resume.pdf'; 
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Background Effects */}
@@ -132,6 +147,20 @@ const HeroSection = () => {
                 >
                   →
                 </motion.div>
+              </motion.span>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={downloadResume}
+              className="group"
+            >
+              <motion.span
+                whileHover={{ scale: 1.1 }}
+                className="flex items-center gap-2"
+              >
+                <Download className="h-4 w-4" />
+                Download Resume
               </motion.span>
             </Button>
             <Button
